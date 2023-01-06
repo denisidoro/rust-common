@@ -1,11 +1,11 @@
-extern crate common;
+extern crate dns_common;
 
 mod commands;
 mod components;
 mod config;
 pub mod prelude;
 
-use common::tracing;
+use dns_common::tracing;
 use prelude::*;
 
 pub fn boot(args: Option<Vec<&str>>) -> Result<()> {
