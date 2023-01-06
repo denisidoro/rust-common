@@ -3,6 +3,9 @@ name = "dns_common_derive"
 version = "0.2.0"
 edition = "2021"
 license = "Apache-2.0"
+authors = ["Denis Isidoro <denis_isidoro@live.com>"]
+description = "Personal derive macros for Rust code"
+license = "Apache-2.0"
 
 [dependencies]
 quote = "1.0.20"
