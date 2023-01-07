@@ -1,6 +1,6 @@
 [package]
 name = "myapp"
-version = "0.4.1"
+version = "0.5.0"
 authors = ["Denis Isidoro <denis_isidoro@live.com>"]
 edition = "2021"
 description = "Sample app for dns_common"
@@ -12,20 +12,20 @@ categories = ["command-line-utilities"]
 license = "Apache-2.0"
 
 [dependencies]
-regex = { version = "1.5.4", default-features = false, features = ["std", "unicode-perl"] }
-clap = { version = "4.0.29", features = ["derive"] }
-walkdir = "2"
+regex = { version = "1.7.0", default-features = false, features = ["std", "unicode-perl"] }
+clap = { version = "4.0.32", features = ["derive"] }
+walkdir = "2.3.2"
 # workerpool = "1.2.0"
-once_cell = "1.10.0"
+once_cell = "1.17.0"
 # isahc = { version = "1.7.2", default-features = false , features = ["http2", "static-curl", "text-decoding"] }
 # reqwest = { version = "0.11.0", default-features = false, features = ["blocking", "gzip", "rustls-tls"] }
-derive_more = "0.99.16"
+derive_more = "0.99.17"
 dns_common_derive = { path = "../dns_common_derive" }
 dns_common = { path = "../dns_common", default-features = false, features = ["yaml", "json"] }
-serde = { version = "1.0" } # TODO: try to remove somehow
+serde = "1.0.152"
 # serde_derive = "1.0.137"
 # anyhow = "1.0.55"
-chrono = "0.4"
+chrono = "0.4.23"
 
 # [dev-dependencies]
 # httpmock = "0.6.6"

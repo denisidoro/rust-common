@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+source "$(dirname "$0")/core.sh"
+
+_cargo() {
+   cd "${MYAPP_HOME}/${CRATE}"
+   pwd
+   cargo "$@"
+}
+
+CRATE="dns_common_derive" _cargo "$@"
+CRATE="dns_common" _cargo "$@"
+CRATE="core" _cargo "$@"
