@@ -1,5 +1,7 @@
 use std::env;
 
+use tracing_subscriber::{prelude::*, EnvFilter};
+
 use crate::prelude::*;
 
 static RUST_LOG: &str = "RUST_LOG";
@@ -22,7 +24,8 @@ pub fn init(config: Option<&TracingConfig>) {
             env::set_var(RUST_LOG, &tracing.level);
         }
 
-        let t = tracing_subscriber::fmt();
+        let filter = EnvFilter::from_default_env();
+        let t = tracing_subscriber::fmt().with_env_filter(filter);
         let res = if tracing.time {
             t.try_init()
         } else {

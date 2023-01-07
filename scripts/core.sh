@@ -2,7 +2,7 @@
 set -euo pipefail
 
 export MYAPP_HOME="$(cd "$(dirname "$0")/.." && pwd)"
-export PROJ_HOME="${MYAPP_HOME}/rust"
+export PROJ_HOME="${MYAPP_HOME}/${CRATE}"
 export PROJ_NAME="myapp"
 export CARGO_PATH="${PROJ_HOME}/core/Cargo.toml"
 
