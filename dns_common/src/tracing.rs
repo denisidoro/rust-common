@@ -1,6 +1,6 @@
 use std::env;
 
-use tracing_subscriber::{fmt, prelude::*, EnvFilter};
+use tracing_subscriber::{prelude::*, EnvFilter};
 
 use crate::prelude::*;
 
