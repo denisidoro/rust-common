@@ -7,6 +7,8 @@ pub struct Input {}
 impl Runnable for Input {
     fn run(&self, _system: System) -> Result<()> {
         println!("TODO");
+        trace!("trace");
+        info!("info");
         Ok(())
     }
 }
