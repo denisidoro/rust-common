@@ -1,4 +1,7 @@
-#[cfg(feature = "yaml")]
+use crate::prelude::*;
+#[cfg(any(feature = "yaml", feature = "json"))]
+use serde::de::DeserializeOwned;
+
 pub fn yaml_from_path<T>(path: &Path) -> Result<T>
 where
     T: DeserializeOwned,
