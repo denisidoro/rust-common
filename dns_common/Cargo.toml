@@ -1,6 +1,6 @@
 [package]
 name = "dns_common"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Denis Isidoro <denis_isidoro@live.com>"]
 description = "Personal toolbelt for Rust code"
