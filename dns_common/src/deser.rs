@@ -1,6 +1,3 @@
-
-
-
 #[cfg(feature = "yaml")]
 pub fn yaml_from_path<T>(path: &Path) -> Result<T>
 where
