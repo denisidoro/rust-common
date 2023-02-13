@@ -1,6 +1,7 @@
 use crate::prelude::*;
 use std::collections::hash_map::Entry;
 
+#[derive(Clone)]
 pub struct System<C> {
     pub config: Arc<C>,
     components: HashMap<TypeId, Arc<dyn Component>>,
