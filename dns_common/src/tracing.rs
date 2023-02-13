@@ -6,7 +6,7 @@ use crate::prelude::*;
 
 static RUST_LOG: &str = "RUST_LOG";
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, Debug, Clone)]
 #[serde(deny_unknown_fields)]
 pub struct TracingConfig {
     pub time: bool,
